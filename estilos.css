@@ -1,0 +1,848 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+
+/*     HEADER Y PORTADA        */
+.contenedor_header {
+    width: 100%;
+    height: 100vh;
+   background-color: blueviolet;
+    *background-image: linear-gradient(blue,blueviolet);
+   position: relative;
+}
+
+
+
+.svg {
+    position: absolute;
+    width: 100%;
+    bottom: -0.5rem;
+    left: 0;
+
+
+
+}
+
+
+
+.contenedor_header .contenedor_portada {
+    max-width: 1200px;
+    height: 100%;
+    *background-color: blue;
+    margin: auto;
+    position: relative;
+
+}
+
+
+
+
+
+
+
+
+ .contenedor_portada .menu {
+  display: flex;
+  *background-color: red;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  width: 100%;
+  
+ }
+ .contenedor_portada .menu h1{
+    text-transform: uppercase;
+    color: white;
+    font-size: 2rem;
+    left: 0;
+ }
+
+ .contenedor_portada .menu .btnmenu{
+
+    display: none;
+    width: 60px;
+    height: 60px;
+    *filter: invert();
+    *position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background-color:#2b3b4b ;
+    *padding: .5rem;
+    
+    
+ }
+
+ .btnmenu img{
+    filter: invert(1);
+    padding: .5rem;
+    
+ }
+
+ .contenedor_portada .menu .ulmenu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+   
+    
+    
+   }
+
+  
+   
+   .contenedor_portada .menu .ulmenu a{
+    padding: .5rem 1rem;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    
+   }
+   .contenedor_portada .menu .ulmenu a:hover{
+   color: yellow;
+    
+   }
+
+
+
+.contenedor_portada .contenedor_texto_imagen {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+
+    overflow: hidden;
+}
+
+.contenedor_portada .text_heading {
+    width: 60%;
+    height: 100%;
+    *background-color: green;
+    padding: 1.5rem;
+    z-index: 1;
+    padding-left: 0;
+
+}
+
+.contenedor_portada .text_heading h1 {
+    color: white;
+    font-weight: 500;
+    font-size: 3em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    
+
+}
+
+
+ 
+.contenedor_portada .text_heading .boton {
+
+    display: block;
+    background-color: black;
+    
+    padding: .8rem;
+    width: 10rem;
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    
+}
+
+.contenedor_portada .text_heading .boton a {
+
+text-decoration: none;
+text-transform: capitalize;
+color: white;
+
+
+}
+
+.contenedor_portada .text_heading .boton:hover {
+    cursor: pointer;
+    background-color:rgba(0, 0, 0, 0.5);
+
+
+
+}
+
+.contenedor_portada .image_heading {
+
+    width: 30%;
+    *background-color: brown;
+    display: flex;
+    margin-left: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    height: 30rem;
+    
+
+}
+
+.contenedor_portada .image_heading img {
+
+    width: 100%;
+    
+    animation: relojflotando 3s infinite ease-in-out;
+    
+
+
+}
+
+@keyframes relojflotando {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+/*   APARTADO DE PRODUCTOS   */
+
+.productos {
+    width: 100%;
+    height: auto;
+    background-color:white;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+
+}
+
+.productos .products_container {
+    max-width: 1200px;
+    *background-color: yellow;
+    margin: auto;
+    height: 100%;
+    display: flex;
+
+}
+
+.products_container .text_product {
+    width: 60%;
+    padding: 1rem;
+
+}
+
+.products_container .text_product h2 {
+    color: blue;
+    font-size: 1.2em;
+
+}
+
+.products_container .text_product h1 {
+
+    font-size: 2.2em;
+    line-height: 1.2em;
+    text-transform: capitalize;
+
+}
+
+.products_container .text_product p {
+
+    font-size: .9em;
+    padding: .5rem;
+
+
+}
+
+.products_container .text_product .fa-solid {
+
+    color: green;
+
+
+}
+
+.products_container .text_product ul {
+
+    margin-top: 1rem;
+    list-style: none;
+    margin-left: 2rem;
+
+}
+
+.products_container .text_product ul li {
+
+    font-size: .9em;
+    font-weight: bold;
+
+}
+
+
+.products_container .image_product {
+    width: 40%;
+    height: 600px;
+
+}
+
+.products_container .image_product img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+
+}
+
+/*APARTADO CARACTERISTICAS*/
+
+.caracteristicas {
+
+    width: 100%;
+    *height: auto;
+    background-color:whitesmoke;
+    position: relative;
+    padding-bottom: 2rem;
+    
+}
+
+.caracteristicas_container {
+    max-width: 1200px;
+    *height: 100%;
+    *background-color: green;
+    margin: auto;
+
+}
+
+.titulo_caracteristicas {
+    width: 700px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.titulo_caracteristicas h1 {
+    padding-top: 1.5rem;
+    font-size: 2.2em;
+    line-height: 1em;
+    text-transform: capitalize;
+
+}
+
+.titulo_caracteristicas p {
+    font-size: .8em;
+    margin-top: 1rem;
+
+
+}
+
+.cajas_caracteristicas {
+
+    width: 100%;
+    height: 100%;
+    *background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+
+}
+
+.cajas_caracteristicas .caja {
+    width: 360px;
+    height: 280px;
+    background-color: white;
+    margin: .5rem;
+    padding: .5rem;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border:1px solid gray;
+    border-radius: 5px;
+    box-shadow: -10px 15px 5px gray;
+
+}
+
+.cajas_caracteristicas .caja .icono {
+    width: 5.625rem;
+    height: 5rem;
+    background-color:white;
+    border-radius: 50%;
+    box-shadow: -10px 10px 20px black;
+    border: 1px solid gray;
+
+}
+
+.cajas_caracteristicas .caja .icono .fa-solid,
+.fa-brands {
+    font-size: 2.5em;
+    line-height: 5rem;
+    color: blue;
+
+
+}
+
+
+
+.cajas_caracteristicas .caja .texto {
+
+    width: 100%;
+    *background-color: orange;
+    position: absolute;
+    margin-top: 5.3rem;
+
+}
+
+
+.cajas_caracteristicas .caja .texto h2 {
+    font-size: 1.5em;
+    text-transform: capitalize;
+
+}
+
+
+.cajas_caracteristicas .caja .texto p {
+
+    font-size: .8em;
+
+}
+
+/* APARTADO DEMO*/
+
+.demo {
+    width: 100%;
+    *height: 350px;
+    *background-color: aqua;
+    background-image: linear-gradient(rgba(73, 98, 240, 0.5), rgba(12, 45, 235, 0.5)), url(imagenes/relojdefondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 3rem;
+
+}
+
+.demo .contenedor_demo {
+    width: 500px;
+    margin: auto;
+    color: white;
+    
+}
+
+.demo .contenedor_demo h1 {
+    text-transform: capitalize;
+    font-size: 2em;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.demo .contenedor_demo p {
+
+    font-size: .8em;
+    text-align: center;
+    padding: .5rem;
+
+}
+
+.play {
+
+    width: 90px;
+    height: 80px;
+    display: flex;
+    background-color: white;
+    margin: auto;
+    margin-top: 2rem;
+
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid black;
+
+}
+
+.play img {
+    width: 100%;
+    line-height: 80px;
+    margin-left: 5px;
+
+
+}
+
+.play a {
+    text-decoration: none;
+
+}
+
+.play:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+
+}
+
+/*APARTADO LO NUEVO*/
+
+.lonuevo {
+    width: 100%;
+    *height: 800px;
+    background-color: white;
+}
+
+.nuevo_encabezado {
+    max-width: 600px;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+
+}
+
+.nuevo_encabezado h1 {
+
+    text-transform: capitalize;
+    font-size: 2em;
+}
+
+.nuevo_encabezado p {
+    font-size: .8em;
+    margin-bottom: 3rem;
+
+}
+
+.lonuevo_container {
+    max-width: 1200px;
+    display: flex;
+    margin: 3.5rem auto;
+    background-color: white;
+
+}
+
+.lonuevo_container .cuadros {
+    width: 70%;
+    *background-color: greenyellow;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+    flex-wrap: wrap;
+
+}
+
+
+.lonuevo_container .cuadros .info {
+    width: 400px;
+    *background-color: salmon;
+    padding: .5rem;
+    margin: .5rem;
+
+}
+
+.lonuevo_container .cuadros .info h2 {
+
+    text-transform: capitalize;
+}
+
+.lonuevo_container .cuadros .info p {
+
+    font-size: .8em;
+    margin-top: .5rem;
+}
+
+.lonuevo_container .lonuevo_imagen {
+    width: 30%;
+}
+
+.lonuevo_container .lonuevo_imagen img {
+    width: 100%;
+    margin-top: 4rem;
+    *background-color: green;
+}
+
+/* APARTADO OFERTAS*/
+
+.oferta {
+    width: 100%;
+    background-color:whitesmoke;
+    height:auto;
+    padding-bottom: 2rem;
+}
+
+.oferta_container {
+    max-width: 1200px;
+    *background-color: aqua;
+    height: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.oferta_container h1 {
+    text-transform: capitalize;
+    font-size: 3em;
+    text-align: center;
+}
+
+.oferta_container span {
+
+    font-size: 2.5em;
+    color: red;
+    font-weight: 800;
+
+}
+
+.oferta_container .relojes {
+   width: 700px;
+margin: auto;
+}
+
+.oferta_container .relojes img {
+    width: 100%;
+}
+
+
+
+
+.comprar_oferta{
+    width: 200px;
+    background-color: black;
+    margin: auto;
+    margin-top: 1.5rem;
+    text-align: center;
+    border-radius: 3rem;
+    justify-content: center;
+    display: flex;
+    animation: comprar 1s linear infinite;
+    transition: all  .5s ease;
+}
+
+.comprar_oferta a{
+   text-decoration: none;
+   padding: 1rem;
+   color: white;
+   text-transform: capitalize;
+   
+   
+}
+@keyframes comprar {
+    0%{background-color: red;}
+    50%{background-color: blue;}
+    100%{background-color: gray;}
+    
+}  
+
+.comprar_oferta:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0.5);
+ }
+
+
+ /*FOOTERRRRRRRRRR */
+
+ .footer{
+    width: 100%;
+    *height: 450px;
+    background-image: linear-gradient(rgba(8, 32, 165, 0.5), rgba(4, 19, 92, 0.5)),url(imagenes/relojfooter.jpg);
+    background-position: center;
+    position: relative;
+    padding-bottom: 4rem;
+    
+ }
+
+ .footer .svg_footer{
+width: 100%;
+top: 0;
+left: 0;
+
+ }
+
+ .footer .svg_footer{
+    width: 100%;
+    position: absolute;
+    
+    
+     }
+
+     .footer .footer_container{
+      max-width: 1200px;
+      height: 100%;
+      *background-color: red;
+      margin: auto;
+      
+
+     }
+
+     .footer_container .container_apartados{
+     width: 100%;
+     *background-color: green;
+     height: 100%;
+     display: flex;
+     flex-wrap: wrap;
+    justify-content: center;
+     gap: 1rem;
+     padding-top: 7rem;
+     }
+
+     
+     .footer_container .container_apartados .apartado{
+       width: 380px;
+       *background-color: greenyellow;
+       height: 300px;
+       z-index: 1;
+     }
+
+    .footer a{
+        text-decoration: none;
+        color: white ;
+    }
+.footer h1{
+    text-transform: capitalize;
+    font-size: 1.2em;
+    margin-top: 1rem;
+    color: white;
+}
+
+.footer .container_apartados {
+    display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.container_apartados .info{
+    
+    color: white;
+    padding-top: 2rem;
+
+}
+
+.container_apartados .info p{
+    
+font-size: .8em;
+padding: 1rem;
+}
+
+.container_apartados .suscribete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+.container_apartados .suscribete h1{
+    font-size: 2em;
+}
+.container_apartados .suscribete .input{
+    width: 300px;
+    margin-top: 1.5rem;
+    padding: .2rem;
+    border-radius: 2rem;
+    border: none;
+    text-align: center;
+}
+
+.container_apartados .suscribete .btn-suscribete{
+   margin-top: 1.3rem;
+   background-color: black;
+   padding: 1rem 1.5rem;
+    border-radius: 3rem;
+    cursor: pointer;
+
+}
+
+.container_apartados .suscribete .btn-suscribete:hover{
+    
+    background-color: red
+  
+ }
+
+ .container_apartados .redes_sociales {
+   padding-top: 2.4rem;
+    
+}
+
+ .container_apartados .redes_sociales .redes{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1rem;
+    
+}
+
+.container_apartados .redes_sociales .redes .fa-square-instagram{
+   color: purple;
+    
+}
+.container_apartados .redes_sociales .redes .fa-square-whatsapp{
+    color:green;
+     
+ }
+.container_apartados .redes_sociales h1{
+   margin-bottom: 1rem;
+    
+}
+
+.container_apartados .redes_sociales .redes i{
+   
+    line-height: 2.5rem;
+    
+}
+
+.container_apartados .redes_sociales .redes a:hover{
+   color: yellow;
+    
+}
+
+
+.boton_arriba{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    right: -100px;
+    bottom: 30px;
+
+    display: flex;
+    cursor: pointer;
+    animation: arriba 2s infinite;
+    transition: all 1.2s ;
+    box-shadow: 10px 10px 5px gray;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton_arriba a img{
+    width: 100%;
+    line-height: 70px;
+    padding: 0;
+    
+
+}
+
+@keyframes arriba {
+
+        0% {
+            transform: translateY(0px);
+        }
+    
+        50% {
+            transform: translateY(20px);
+        }
+    
+        100% {
+            transform: translateY(0px);
+        }
+    
+}
+
+
+
+
+
+

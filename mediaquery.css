@@ -1,0 +1,293 @@
+@media screen and (max-width:1024px){
+
+  .contenedor_header{
+    padding: 2rem;
+
+  }
+
+
+}
+
+
+@media screen and (max-width:900px){
+
+html{
+  overflow-x: hidden;
+}
+  .contenedor_header{
+    padding-top: 0;
+  }
+
+  .contenedor_portada .menu{
+    background-color: red;
+    position: fixed;
+    left: 0;
+    justify-content: space-evenly;
+    z-index: 50;
+    
+    
+   }
+  .contenedor_portada .menu h1{
+   display: none;
+ }
+
+
+ .contenedor_portada .menu .btnmenu{
+  display: flex;
+  position: absolute;
+  border-radius: 50px;
+  
+  
+  
+  
+  
+ }
+
+ 
+
+.ulmenu{
+  position: absolute;
+  flex-direction: column;
+  padding-top: 3rem;
+  background-color:#2b3b4b ;
+  width: 100%;
+  height: 100vh;
+  transform: translateY(-100%);
+  transition: all .5s ease;
+
+ }
+
+ .contenedor_portada .menu .ulmenu li{
+   padding: 2rem;
+   font-size: 1.2em;
+    
+ }
+ .contenedor_portada .menu .ulmenu a:hover{
+  color:yellow
+   
+}
+
+.mostrar_menu{
+  transform: translateY(0);
+ }
+
+  .ocultar_menu{
+  transform: translateY(-100%);
+ } 
+
+ .products_container ul{
+   font-size: .8em;
+ }
+
+ .boton_arriba{
+  display: none;
+ }
+
+
+
+ .redes_sociales {
+ 
+ 
+  align-items: center;
+  justify-content: center;
+  
+  
+ }
+
+ .redes_sociales .redes {
+ 
+ margin-left: 2rem;
+  justify-content: flex-start;
+  
+  
+ }
+ .redes_sociales i{
+  display: inline-flex;
+  
+  
+ }
+ .redes_sociales a{
+  margin-left: .7rem;
+  font-size: .4em;
+  
+  
+ }
+
+
+}
+/* 
+MEDIDAS DE 420PX */
+
+@media screen and (max-width:420px){
+
+
+  .contenedor_portada .text_heading p {
+    font-size: .8em;
+    margin-bottom: .5rem;
+     
+ 
+ }
+ 
+  .contenedor_portada .contenedor_texto_imagen {
+    width: 100%;
+    flex-direction: column;
+   text-align: center;
+   *background-color: yellow;
+   padding-top: 2rem;
+  
+  
+}
+
+.contenedor_portada .text_heading .boton {
+
+ margin:5px auto;
+ 
+  
+}
+
+.contenedor_portada .text_heading {
+  width: 100%;
+
+
+}
+
+
+  .contenedor_portada .text_heading h1 {
+   font-size: 1.5em;
+    
+
+}
+
+.contenedor_portada .image_heading {
+margin:auto;
+width: 40%;
+height: 16rem;
+padding-top: 0;
+margin-top: 0;
+
+
+}
+.contenedor_portada .image_heading img {
+ padding-top: 0;
+  
+  
+  }
+
+
+.products_container{
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.products_container .text_product {
+  width: 100%;
+  text-align: center;
+  
+}
+
+.products_container .text_product h1{
+  text-align: center;
+  
+}
+.products_container .text_product ul {
+
+ margin: .5rem .5rem;
+ font-size: 1em;
+
+}
+
+.products_container .image_product {
+  width: 100%;
+  
+
+}
+
+.titulo_caracteristicas {
+  width: 100%;
+  
+
+}
+.titulo_caracteristicas h1{
+  font-size: 2em;
+  
+
+}
+.demo .contenedor_demo {
+  width: 100%;
+  
+}
+
+.lonuevo_container {
+  flex-direction: column-reverse;
+  padding-top: 3rem;
+align-items: center;
+}
+
+.lonuevo_container .cuadros {
+  width: 100%;
+  
+
+}
+.lonuevo_container .cuadros .info h2 {
+text-align: center;
+}
+.lonuevo_container .lonuevo_imagen {
+  width: 40%;
+}
+
+.oferta_container .relojes {
+  width: 100%;
+  padding: .5rem;
+
+}
+
+.footer .footer_container .container_apartados{
+  text-align: center;
+
+ }
+
+ .container_apartados .redes_sociales .redes {
+  
+}
+
+
+
+
+}
+
+@media screen and (max-width:375px){
+
+
+  .cajas_caracteristicas .caja .icono {
+    width: 4rem;
+    height: 3.5rem;
+  
+}
+
+.cajas_caracteristicas .caja .icono .fa-solid,
+.fa-brands {
+    font-size: 2em;
+    line-height: 3.5rem;
+    
+
+
+}
+  .cajas_caracteristicas .caja .texto h2 {
+    font-size: 1.2em;
+    
+
+}
+.cajas_caracteristicas .caja .texto p {
+  font-size: .7em;
+  
+
+}
+
+
+}
+
+
+
+
